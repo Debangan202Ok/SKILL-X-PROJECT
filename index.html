@@ -8,14 +8,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="shortcut icon"
+      href="icons/icons8-book-94.png"
+      type="image/x-icon"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="icons/icons8-book-94.png" type="image/x-icon">
     <title>Data Structure</title>
   </head>
   <body>
-    <navbar class="navBar"><h1>DATA STRUCTURE</h1></navbar>
+    <navbar class="navBar" id="nav"
+      ><h1>DATA STRUCTURE</h1>
+      <img id="mode" src="icons/brightness.png" alt=""
+    />
+      <img id="mode1" src="icons/icons8-light-mode-78.png" onclick="Light()" alt="">
+    </navbar>
     <div class="frontBody">
       <div class="fronText">
         <h1>WHAT IS DATA STRUCTURE?</h1>
@@ -26,15 +35,21 @@
           it. There are different types of data structures that can be used
           depending on the needs of the program or software system
         </h2>
-        <button class="btn">TRY DATA STRUCRTURES DEMO</button>
-        <a class="scrl" href="#T2"><img src="icons/icons8-down-arrow-64.png" alt=""><span>READ MORE</span></a>
+        <button class="btn" id="tab" onclick="">
+          TRY DATA STRUCRTURES DEMO
+        </button>
+        <a class="scrl" href="#T2"
+          ><img src="icons/icons8-down-arrow-64.png" alt="" /><span
+            >READ MORE</span
+          ></a
+        >
       </div>
       <div class="frontImg"><img src="images/R (1).png" alt="" /></div>
     </div>
-    <hr id="T2">
+    <hr id="T2" />
     <div class="frontBody2 reveal">
       <div class="frontImg2"><img src="images/data1.png" alt="" /></div>
-      <div class="fronText2">
+      <div class="fronText">
         <h1>importance of data structure?</h1>
         <h2>
           Data structures are important because they allow you to store and
@@ -47,13 +62,12 @@
           in computer science and are used extensively in programming and
           software development
         </h2>
-        <button id="pop" class="btn2" >READ MORE FROM WIKIPEDIA</button>
+        <button id="pop" class="btn2">READ MORE FROM WIKIPEDIA</button>
       </div>
     </div>
     <div class="frontBody2 reveal">
-      <div class="fronText2">
+      <div class="fronText">
         <h1>real life application on data structure</h1>
-
         <ul>
           <li>
             <h2>
@@ -82,14 +96,25 @@
     </div>
     <div class="btmNavHead"><h1>Reffernces</h1></div>
     <div class="bottomBar">
-      <div class="bar">
-        <a href="https://www.youtube.com/results?search_query=data+structures+playlist"><img src="icons/icons8-youtube-48.png" alt=""></a>
-        <a href="https://en.wikipedia.org/wiki/Data_structure"><img src="icons/icons8-wikipedia-logo-48.png" alt=""></a>
-        <a href="https://www.javatpoint.com/data-structure-tutorial"><img src="icons/icons8-book-94.png" alt=""></a>
+      <div class="bar" id="bar">
+        <a
+          href="https://www.youtube.com/results?search_query=data+structures+playlist"
+          ><img src="icons/icons8-youtube-48.png" alt=""
+        /></a>
+        <a href="https://en.wikipedia.org/wiki/Data_structure"
+          ><img src="icons/icons8-wikipedia-logo-48.png" alt=""
+        /></a>
+        <a href="https://www.javatpoint.com/data-structure-tutorial"
+          ><img src="icons/icons8-book-94.png" alt=""
+        /></a>
       </div>
-      <a href="#"><div class="scrlup"><img src="icons/icons8-up-arrow-64.png" alt=""></div></a>
+      <a href="#"
+        ><div class="scrlup">
+          <img src="icons/icons8-up-arrow-64.png" alt="" /></div
+      ></a>
     </div>
-    <script src="popup.js"></script>
-    <script src="reveal.js"></script>
+    <script src="JavaScript/modeSwitch.js"></script>
+    <script src="JavaScript/popup.js"></script>
+    <script src="JavaScript/reveal.js"></script>
   </body>
 </html>
